@@ -26,8 +26,7 @@
   <div class="col-span-12 md:col-span-4">Preis</div>
 </div>
 
-{
-#each items as item }
+{#each items as item }
   <div class="grid grid-cols-12 bg-white px-2 py-2" >
     <div class="col-span-12 md:col-span-8">{item.attributes.name}</div>
     <div class="col-span-12 md:col-span-4">{item.attributes.price} €</div>
