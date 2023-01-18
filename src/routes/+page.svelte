@@ -11,6 +11,10 @@
   import HeadlineSection from "../components/HeadlineSection.svelte";
 </script>
 
+<svelte:head>
+  <title>Startseite - klotz-imbiss.de</title>
+</svelte:head>
+
 <div class="grid grid-cols-6 gap-3">
   <div class="col-span-6 md:col-span-3">
     <ImageCard />

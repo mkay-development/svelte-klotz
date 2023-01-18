@@ -8,3 +8,9 @@ node_modules
 !.env.example
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Service Worker
+src/sw.js
+src/sw.js.map
+src/workbox-*.js.map
+src/workbox-*.js
