@@ -18,15 +18,17 @@
   });
 </script>
 
-<h2 class="mt-6 mb-3 text-white">Mittwoch</h2>
-<div class="grid grid-cols-12 font-bold bg-gray-400 px-2 py-2">
-  <div class="col-span-12 md:col-span-8">Name</div>
-  <div class="col-span-12 md:col-span-4">Preis</div>
-</div>
-
-{#each items as item}
-  <div class="grid grid-cols-12 bg-white px-2 py-2">
-    <div class="col-span-12 md:col-span-8">{item.attributes.name}</div>
-    <div class="col-span-12 md:col-span-4">{item.attributes.price} €</div>
+<h2 class="mt-6 mb-3 text-white font-bold">Mittowch</h2>
+<div class="border border-black">
+  <div class="grid grid-cols-12 text-white bg-[#5C7987] px-2 py-2">
+    <div class="col-span-12 md:col-span-8">Name</div>
+    <div class="col-span-12 md:col-span-4">Preis</div>
   </div>
-{/each}
+
+  {#each items as item}
+    <div class="grid grid-cols-12 px-2 py-2 bg-[#5C7987]">
+      <div class="col-span-12 md:col-span-8">{item.attributes.name}</div>
+      <div class="col-span-12 md:col-span-4">{item.attributes.price} €</div>
+    </div>
+  {/each}
+</div>
