@@ -13,4 +13,4 @@ jobs:
         username: root
         key: ${{ secrets.KEY }}
         port: 22
-        script: cd /var/www/klotz.mkay-development.de && yarn && yarn build
+        script: cd /var/www/klotz.mkay-development.de && sh build.sh
