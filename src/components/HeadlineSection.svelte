@@ -1,6 +1,4 @@
 <script>
-  import { onMount } from "svelte";
-
   let headline = "Speisenkarte vom 13. - 18.02.2023";
   let note = "Lorem Ipsum";
 </script>
