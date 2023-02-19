@@ -1,16 +1,14 @@
 <script>
   import { onMount } from "svelte";
+  import PocketBase from "pocketbase";
+  import ProductRow from "./ProductRow.svelte";
 
   let items = [];
 
-  let load = function () {
-    fetch("https://catalog.klotz-imbiss.de/api/card?populate=angebot")
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        items = data.data.attributes.angebot.data;
-      });
+  let load = async function () {
+    const pb = new PocketBase("https://ily39d9iu6o63l8.pocketbase.tech");
+    const result = await pb.collection("sale").getList(1, 50);
+    items = result.items;
   };
 
   onMount(function () {
@@ -27,8 +25,7 @@
 
   {#each items as item}
     <div class="grid grid-cols-12 px-2 py-2 bg-[#5C7987]">
-      <div class="col-span-12 md:col-span-8">{item.attributes.name}</div>
-      <div class="col-span-12 md:col-span-4">{item.attributes.price} €</div>
+      <ProductRow identifier={item.product} />
     </div>
   {/each}
 </div>
