@@ -9,6 +9,7 @@
   import WelcomeCard from "../components/WelcomeCard.svelte";
   import ImageCard from "../components/ImageCard.svelte";
   import HeadlineSection from "../components/HeadlineSection.svelte";
+  import JobsCard from "../components/JobsCard.svelte";
 </script>
 
 <svelte:head>
@@ -41,5 +42,6 @@
     <SaleGrid />
     <FridayGrid />
     <SaturdayGrid />
+    <JobsCard />
   </div>
 </div>
