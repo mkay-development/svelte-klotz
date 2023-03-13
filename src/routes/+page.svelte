@@ -24,6 +24,7 @@
     <MondayGrid />
     <TuesdayGrid />
     <WednesdayGrid />
+    <ThursdayGrid />
   </div>
   <div class="col-span-6 md:col-span-3">
     <img
@@ -38,7 +39,6 @@
       praesentium quidem modi rerum adipisci voluptatem deserunt quod? Impedit
       voluptatibus ipsam totam.
     </p>
-    <ThursdayGrid />
     <SaleGrid />
     <FridayGrid />
     <SaturdayGrid />
