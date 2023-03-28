@@ -1,23 +1,23 @@
 {
-    "short_name": "Klotz",
-    "name": "Klotz - by MkaY Development",
-    "description": "Klotz - by MkaY Development",
-    "icons": [
-      {
-        "src": "/favicon.png",
-        "type": "image/png",
-        "sizes": "192x192"
-      },
-      {
-        "src": "/images/icons-512.png",
-        "type": "image/png",
-        "sizes": "512x512"
-      }
-    ],
-    "id": "/?source=pwa",
-    "start_url": "/?source=pwa",
-    "background_color": "#1f6fed",
-    "display": "standalone",
-    "scope": "/",
-    "theme_color": "#1f6fed"
-  }
+  "short_name": "Klotz",
+  "name": "Klotz - by MkaY Development",
+  "description": "Klotz - by MkaY Development",
+  "icons": [
+    {
+      "src": "/images/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "id": "/?source=pwa",
+  "start_url": "/?source=pwa",
+  "background_color": "#759AAB",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#1f6fed"
+}
