@@ -11,8 +11,12 @@
   </div>
 </header>
 
-<svelte:head>
-  <script defer data-domain="klotz.mkay-development.de" src="https://tracking.mkay.dev/js/script.js"></script>
+<svelte:head
+  ><script
+    defer
+    data-domain="klotz.mkay-development.de"
+    src="https://bhkenqpeta4iu6t.plausible.dev/js/script.js"
+  ></script>
 </svelte:head>
 
 <main class="mx-auto max-w-5xl my-2 px-2 py-2"><slot /></main>
