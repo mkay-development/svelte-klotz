@@ -8,7 +8,6 @@
   import SaleGrid from "../components/SaleGrid.svelte";
   import WelcomeCard from "../components/WelcomeCard.svelte";
   import ImageCard from "../components/ImageCard.svelte";
-  import HeadlineSection from "../components/HeadlineSection.svelte";
   import JobsCard from "../components/JobsCard.svelte";
 </script>
 
@@ -18,9 +17,9 @@
 
 <div class="grid grid-cols-6 gap-3">
   <div class="col-span-6 md:col-span-3">
+    <h2 class="font-bold text-lg text-center text-white">Speisekarte für diese Woche</h2>
     <ImageCard />
     <WelcomeCard />
-    <HeadlineSection />
     <MondayGrid />
     <TuesdayGrid />
     <WednesdayGrid />

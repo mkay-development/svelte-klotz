@@ -2,11 +2,12 @@
   import { onMount } from "svelte";
   import PocketBase from "pocketbase";
   import ProductRow from "./ProductRow.svelte";
+  import { url } from '../stores/backend';
 
   let items = [];
 
   let load = async function () {
-    const pb = new PocketBase("https://ily39d9iu6o63l8.pocketbase.tech");
+    const pb = new PocketBase($url);
     const result = await pb.collection("sale").getList(1, 50);
     items = result.items;
   };
